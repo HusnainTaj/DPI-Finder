@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212121;
+    color: white;
+    font-family: monospace;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #track
+{
+    margin-top: 200px;
+    background-color: #181818;
+    height: 100px;
+    width: 100%;
+} */
+
+#box
+{
+    display: inline-block;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    margin: 100px;
+    cursor: grab;
+}
