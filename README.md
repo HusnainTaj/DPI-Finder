@@ -1,10 +1,10 @@
 # DPI Finder
 Simple web app to find DPI of a mouse.
 
-# How to Use
-1. Enter a distance in inches (larger value prefered).
+## Usage
+1. Enter a distance in inches (larger value preferred).
 2. Click and hold with any of your mouse button
-3. Move your mouse the sepcified distance (use a ruler/measuring tape).
+3. Move your mouse the specified distance (use a ruler/measuring tape).
 4. Let go of the mouse button.
 
 ## Note
