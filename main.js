@@ -2,11 +2,11 @@
 
 document.addEventListener('pointerlockchange', () => {
 	if (document.pointerLockElement === document.body) {
-		console.log('The pointer lock status is now locked');
+		// console.log('The pointer lock status is now locked');
 		document.addEventListener("mousemove", PLMouseMove, false);
 	}
 	else {
-		console.log('The pointer lock status is now unlocked');
+		// console.log('The pointer lock status is now unlocked');
 		document.removeEventListener("mousemove", PLMouseMove, false);
 	}
 }, false);
