@@ -4,20 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DPI Checker</title>
+    <title>DPI Finder</title>
 
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <h1>DPI FINDER</h1>
-    <h2>Pixels Moved: <span id="pixelMovedCount">0</span></h2>
-    <h2>Distance(Inch): <input id="distance" type="number" value="2"></h2>
-    <h2>DPI: <span id="resultantDpi">X</span></h2>
-    <span id="box"></span>
+    
+    <h6 style="text-align: center;">click and hold anywhere on the screen and move your mouse the specified distance</h6>
 
-    <!-- <div id="track">
-        <span id="box"></span>
-    </div> -->
+    <main>
+        <div class="input-grp">
+            <label for="pixelMovedCount">Pixels Moved</label>
+            <div class="inputBtnGrp">
+                <input type="number" name="pixelMovedCount" id="pixelMovedCount" value="0" disabled>
+            </div>
+        </div>
+        <div class="input-grp" style="margin-bottom: 40px;">
+            <label for="distance">Distance (Inch)</label>
+            
+            <div class="inputBtnGrp">
+                <i class="material-icons minus">remove</i>
+                <input type="number" name="distance" id="distance" min="1" step="1" value="2">
+                <i class="material-icons add">add</i>
+            </div>
+        </div>
+        <h4 style="margin: 20px 0;"><span id="resultantDpi">0</span> DPI</h4>
+    </main>
+
+    <h6 style="color: #E74C3C;text-align: center;">make sure pointer precision is off in windows settings</h6>
+
+
+    <!-- <span id="fwtext">300</span> -->
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
